@@ -156,6 +156,10 @@ nav.main a.cur{border-color:#fff}
 @media (max-width:640px){.n-gal{grid-template-columns:repeat(2,1fr);grid-template-rows:210px 150px 250px 200px}.n-gal .a,.n-gal .b,.n-gal .e{grid-column:span 2}.n-gal .c,.n-gal .d{grid-column:span 1}.n-note{flex-direction:column;gap:6px}}
 .banner{background-position:center 60%}
 .t-lead{margin-top:16px;max-width:640px;color:var(--muted);line-height:1.9;word-break:keep-all}
+.t-intro{max-width:none;font-size:17px;line-height:1.95;color:var(--ink)}
+.t-intro:first-child{margin-top:0}
+.t-intro+.t-intro{margin-top:18px}
+.t-intro~.t-call{margin-top:36px}
 .t-call{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:15px;color:var(--brown)}
 .t-call:hover{text-decoration:underline;text-underline-offset:4px}
 .t-cards{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px}
@@ -165,6 +169,8 @@ nav.main a.cur{border-color:#fff}
 .t-badge{align-self:flex-start;font-size:12px;letter-spacing:.06em;color:var(--brown);border:1px solid var(--brown);padding:2px 12px;border-radius:99px}
 .t-card h3{font-family:var(--serif);font-weight:500;font-size:28px;margin:14px 0 6px;letter-spacing:.04em}
 .t-sub{color:var(--muted);font-size:15px;line-height:1.7;word-break:keep-all}
+.t-sub-strong{font-weight:500;color:var(--ink)}
+.t-desc{margin-top:12px;color:var(--muted);font-size:15px;line-height:1.8;word-break:keep-all}
 .t-info{margin:22px 0 24px;border-top:1px solid var(--line)}
 .t-info div{display:grid;grid-template-columns:72px 1fr;padding:11px 2px;border-bottom:1px solid var(--line);font-size:15px}
 .t-info dt{color:var(--brown);font-weight:500}
@@ -252,8 +258,9 @@ footer .copy{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,
 
 <main class="n-wrap">
   <section>
-    <div class="n-titlebar"><h1 class="n-h1">템플스테이</h1><span class="badge">1박 2일</span></div>
-    <p class="t-lead">산사의 하루를 직접 경험해 보세요. 예불, 산책, 차담으로 천천히 쉬어가는 시간입니다.</p>
+    <p class="t-lead t-intro">성혈사 템플스테이는 수려한 자연과 천년 고찰의 정취 속에서 산사의 하루를 온전히 경험하는 1박 2일형 프로그램입니다.</p>
+    <p class="t-lead t-intro">스님과 함께 하는 사찰 예불과 고즈넉한 도량 산책, 마음을 비우는 명상과 차담을 통해 바쁜 일상에 지친 내면을 차분히 돌볼 수 있습니다.</p>
+    <p class="t-lead t-intro">누구든 편안하게 머물며 온전한 휴식을 누리는 일반형과, 가족이 함께 마음 수련을 하며 스님과 진솔한 대화를 나누는 가족형 프로그램으로 운영됩니다. 성혈사에서 보낸 1박 2일의 고요한 울림이 일상으로 돌아간 뒤에도 오래도록 든든한 위로가 되어줄 것입니다.</p>
     <a class="t-call" href="tel:0546332582"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11 11 0 003.5.56 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.25 1z"/></svg>문의 054-633-2582</a>
   </section>
 
@@ -265,12 +272,13 @@ footer .copy{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,
         <div class="t-body">
           <span class="t-badge">1박 2일</span>
           <h3>일반형</h3>
-          <p class="t-sub">혼자서도, 함께여도 편안하게 쉬어가는 산사의 1박 2일</p>
+          <p class="t-sub t-sub-strong">혼자서도, 함께여도 편안하게 쉬어가는 산사의 1박 2일</p>
+          <p class="t-desc">성혈사의 고즈넉한 산사 분위기 속에서 일상의 분주함을 내려놓고 온전한 쉼과 호흡을 되찾는 기본형 템플스테이입니다. 처음 템플스테이를 접하는 분이나 조용히 마음을 가라앉히고 싶은 분들께 추천합니다.</p>
           <dl class="t-info">
             <div><dt>일정</dt><dd>1박 2일</dd></div>
-            <div><dt>대상</dt><dd>(입력 예정)</dd></div>
-            <div><dt>인원</dt><dd>(입력 예정)</dd></div>
-            <div><dt>참가비</dt><dd>(입력 예정)</dd></div>
+            <div><dt>대상</dt><dd>성인 및 청소년 (개인·동반 모두 가능)</dd></div>
+            <div><dt>인원</dt><dd>회차 당 7명 내외 (선착순)</dd></div>
+            <div><dt>참가비</dt><dd>성인 50,000원 · 청소년 35,000원</dd></div>
           </dl>
           <div class="t-act"><a class="btn-apply" data-form="general" href="#">신청하기</a></div>
         </div>
@@ -280,12 +288,13 @@ footer .copy{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,
         <div class="t-body">
           <span class="t-badge">1박 2일</span>
           <h3>가족형</h3>
-          <p class="t-sub">가족과 함께 보내는 산사의 1박 2일</p>
+          <p class="t-sub t-sub-strong">가족과 함께 수련하며 온기를 깊게 하는 템플 스테이</p>
+          <p class="t-desc">바쁜 일상 속에서 서로에게 깊이 귀 기울이기 어려웠던 가족들이 성혈사에서 함께 머물며 마음 수련과 대화를 나누는 프로그램입니다. 서로를 이해하고 위로하며 가족만의 깊은 유대를 다지고 싶은 가족들께 어울립니다.</p>
           <dl class="t-info">
             <div><dt>일정</dt><dd>1박 2일</dd></div>
-            <div><dt>대상</dt><dd>(입력 예정)</dd></div>
-            <div><dt>인원</dt><dd>(입력 예정)</dd></div>
-            <div><dt>참가비</dt><dd>(입력 예정)</dd></div>
+            <div><dt>대상</dt><dd>부모·자녀 동반 가족 단위</dd></div>
+            <div><dt>인원</dt><dd>회차당 두 가족 내외 (3~5인 기준)</dd></div>
+            <div><dt>참가비</dt><dd>문의</dd></div>
           </dl>
           <div class="t-act"><a class="btn-apply" data-form="family" href="#">신청하기</a></div>
         </div>
